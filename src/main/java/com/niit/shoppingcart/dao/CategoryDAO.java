@@ -8,12 +8,10 @@ public interface CategoryDAO {
 
 	public List<Category> list();
 
-	public Category get(String id);
+	public boolean addCategory(Category category);
 
-	public Category validate(String id, String password);
+	public boolean updateCategory(Category category);
 
-	public boolean save(Category category);
-
-	public boolean update(Category category);
+	public boolean deleteCategory(Category category);
 
 }
