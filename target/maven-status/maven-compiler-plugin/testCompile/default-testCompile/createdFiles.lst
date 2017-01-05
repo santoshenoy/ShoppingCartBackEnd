@@ -1,1 +1,3 @@
 com\niit\shoppingcart\EmployeeTest.class
+com\niit\shoppingcart\UserDAOTestCase.class
+com\niit\shoppingcart\TestUserDAO.class

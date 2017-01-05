@@ -1,6 +1,7 @@
 com\niit\shoppingcart\model\Employee.class
-com\niit\shoppingcart\daoimpl\UserDAOImpl.class
 com\niit\shoppingcart\dao\EmployeeDAO.class
-com\niit\shoppingcart\config\ApplicationContextConfig.class
 com\niit\shoppingcart\dao\UserDAO.class
 com\niit\shoppingcart\daoimpl\EmployeeDAOImpl.class
+com\niit\shoppingcart\daoimpl\UserDAOImpl.class
+com\niit\shoppingcart\config\ApplicationContextConfig.class
+com\niit\shoppingcart\model\User.class
