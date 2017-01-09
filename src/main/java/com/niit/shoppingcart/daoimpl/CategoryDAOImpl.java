@@ -25,6 +25,11 @@ public class CategoryDAOImpl implements CategoryDAO {
 	}
 
 	@Transactional
+	public Category get(String id) {
+		return (Category) sessionFactory.getCurrentSession().get(Category.class, id);
+	}
+
+	@Transactional
 	public List<Category> list() {
 		String hql = "from Category";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);

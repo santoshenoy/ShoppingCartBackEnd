@@ -25,6 +25,11 @@ public class SupplierDAOImpl implements SupplierDAO {
 	}
 
 	@Transactional
+	public Supplier get(String id) {
+		return (Supplier) sessionFactory.getCurrentSession().get(Supplier.class, id);
+	}
+
+	@Transactional
 	public List<Supplier> list() {
 		String hql = "from Supplier";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);

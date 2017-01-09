@@ -8,6 +8,8 @@ public interface CategoryDAO {
 
 	public List<Category> list();
 
+	public Category get(String id);
+
 	public boolean addCategory(Category category);
 
 	public boolean updateCategory(Category category);

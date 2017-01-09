@@ -1,17 +1,31 @@
 package com.niit.shoppingcart.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 @Entity
-@Table
+@Table(name = "USER")
 @Component
 public class User {
+
 	@Id
 	private String id;
+	@NotEmpty(message = "Please enter your name")
+	private String name;
+	@Min(6)
+	@Max(10)
+	private String password;
+	private String mobile;
+	@Column(unique = true, nullable = false)
+	private String mail;
+	private String role;
 
 	public String getId() {
 		return id;
@@ -52,10 +66,5 @@ public class User {
 	public void setRole(String role) {
 		this.role = role;
 	}
-
-	private String name;
-	private String password;
-	private String mobile;
-	private String role;
 
 }

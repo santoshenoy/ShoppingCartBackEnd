@@ -25,6 +25,11 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	@Transactional
+	public Product get(String id) {
+		return (Product) sessionFactory.getCurrentSession().get(Product.class, id);
+	}
+
+	@Transactional
 	public List<Product> list() {
 		String hql = "from Product";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
