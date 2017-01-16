@@ -30,7 +30,6 @@ public class CategoryDAOTestCase {
 		categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
 	}
 
-	@Test
 	public void saveTestCase() {
 
 		category.setId("CAT_005");

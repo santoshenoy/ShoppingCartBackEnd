@@ -39,13 +39,13 @@ public class UserDAOTestCase {
 
 	@Test
 	public void validateCredentials() {
-		user = userDAO.validate("3", "niit");
+		user = userDAO.isValidUser("3", "niit");
 		Assert.assertNotNull("validateCredentials", user);
 	}
 
 	@Test
 	public void invalidateCredentials() {
-		user = userDAO.validate("fnejed", "mckdnjef");
+		user = userDAO.isValidUser("fnejed", "mckdnjef");
 		Assert.assertNull("invalidateCredentials", user);
 
 	}

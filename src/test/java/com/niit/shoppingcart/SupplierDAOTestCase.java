@@ -30,7 +30,7 @@ public class SupplierDAOTestCase {
 		supplierDAO = (SupplierDAO) context.getBean("supplierDAO");
 	}
 
-	@Test
+	// @Test
 	public void saveTestCase() {
 
 		supplier.setId("SUP_002");
@@ -41,6 +41,7 @@ public class SupplierDAOTestCase {
 	}
 
 	@Test
+
 	public void updateTestCase() {
 		supplier.setId("SUP_001");
 		supplier.setName("SANTOSH");

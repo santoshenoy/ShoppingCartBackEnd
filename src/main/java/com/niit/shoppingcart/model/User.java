@@ -20,11 +20,21 @@ public class User {
 	@NotEmpty(message = "Please enter your name")
 	private String name;
 	@Min(6)
-	@Max(10)
+	@Max(25)
 	private String password;
 	private String mobile;
+
 	@Column(unique = true, nullable = false)
 	private String mail;
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
 	private String role;
 
 	public String getId() {

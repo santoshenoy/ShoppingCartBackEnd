@@ -30,8 +30,10 @@ public class UserDAOImpl implements UserDAO {
 
 	@Transactional
 	public List<User> list() {
+		log.debug("List method Started");
 		String hql = "from User";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		log.debug("List method Ends");
 		return query.list();
 	}
 
@@ -41,7 +43,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Transactional
-	public User validate(String id, String password) {
+	public User isValidUser(String id, String password) {
 		String hql = "from User where id= '" + id + "'   and password = '" + password + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		return (User) query.uniqueResult();
