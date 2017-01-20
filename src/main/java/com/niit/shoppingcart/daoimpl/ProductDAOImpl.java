@@ -39,7 +39,7 @@ public class ProductDAOImpl implements ProductDAO {
 	@Transactional
 	public boolean addProduct(Product product) {
 		try {
-			sessionFactory.getCurrentSession().save(product);
+			sessionFactory.getCurrentSession().saveOrUpdate(product);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -59,14 +59,14 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	@Transactional
-	public boolean deleteProduct(Product product) {
+	public void deleteProduct(String id) {
 		try {
+			Product product = new Product();
+			product.setId(id);
 			sessionFactory.getCurrentSession().delete(product);
 		} catch (Exception e) {
 			e.printStackTrace();
-			return false;
 		}
-		return true;
 	}
 
 }

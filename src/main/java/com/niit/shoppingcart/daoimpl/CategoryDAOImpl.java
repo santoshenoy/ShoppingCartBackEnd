@@ -2,6 +2,7 @@ package com.niit.shoppingcart.daoimpl;
 
 import java.util.List;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	@Transactional
 	public boolean addCategory(Category category) {
 		try {
-			sessionFactory.getCurrentSession().save(category);
+			sessionFactory.getCurrentSession().saveOrUpdate(category);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -59,14 +60,27 @@ public class CategoryDAOImpl implements CategoryDAO {
 	}
 
 	@Transactional
-	public boolean deleteCategory(Category category) {
+	public void deleteCategory(String id) {
 		try {
+			Category category = new Category();
+			category.setId(id);
 			sessionFactory.getCurrentSession().delete(category);
 		} catch (Exception e) {
 			e.printStackTrace();
-			return false;
 		}
-		return true;
+	}
+
+	@Transactional
+	public Category getByName(String name) {
+		try {
+			String hql = "FROM Category where name='" + name + "'";
+			Query query = sessionFactory.getCurrentSession().createQuery(hql);
+			List<Category> list = query.list();
+			return list.get(0);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 
 }

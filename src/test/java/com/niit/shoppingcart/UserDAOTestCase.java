@@ -1,7 +1,6 @@
 package com.niit.shoppingcart;
 
 import org.junit.BeforeClass;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -30,33 +29,33 @@ public class UserDAOTestCase {
 		userDAO = (UserDAO) context.getBean("userDAO");
 	}
 
-	@Test
+	// @Test
 	public void getUserTestCase() {
 		user = userDAO.get("3");
 		Assert.assertNotNull("getUserTestCase", user);
 
 	}
 
-	@Test
+	// @Test
 	public void validateCredentials() {
 		user = userDAO.isValidUser("3", "niit");
 		Assert.assertNotNull("validateCredentials", user);
 	}
 
-	@Test
+	// @Test
 	public void invalidateCredentials() {
 		user = userDAO.isValidUser("fnejed", "mckdnjef");
 		Assert.assertNull("invalidateCredentials", user);
 
 	}
 
-	@Test
+	// @Test
 	public void getAllUsersTestCase() {
 		int size = userDAO.list().size();
 		Assert.assertEquals("length check", 3, size);
 	}
 
-	@Test
+	// @Test
 	public void saveTestCase() {
 		user.setId("Skmjekd");
 		user.setName("mekfnefe");
@@ -67,7 +66,7 @@ public class UserDAOTestCase {
 		Assert.assertEquals("saveTestCase", true, userDAO.save(user));
 	}
 
-	@Test
+	// @Test
 	public void updateTestCase() {
 		user = new User();
 		user.setId("Santoshq1e");

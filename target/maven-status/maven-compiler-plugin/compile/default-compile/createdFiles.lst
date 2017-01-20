@@ -8,6 +8,7 @@ com\niit\shoppingcart\daoimpl\CategoryDAOImpl.class
 com\niit\shoppingcart\daoimpl\SupplierDAOImpl.class
 com\niit\shoppingcart\dao\CategoryDAO.class
 com\niit\shoppingcart\model\Product.class
+com\niit\shoppingcart\util\Util.class
 com\niit\shoppingcart\dao\SupplierDAO.class
 com\niit\shoppingcart\model\Supplier.class
 com\niit\shoppingcart\model\User.class

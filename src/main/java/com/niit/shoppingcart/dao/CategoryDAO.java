@@ -14,6 +14,8 @@ public interface CategoryDAO {
 
 	public boolean updateCategory(Category category);
 
-	public boolean deleteCategory(Category category);
+	public void deleteCategory(String id);
+
+	public Category getByName(String name);
 
 }

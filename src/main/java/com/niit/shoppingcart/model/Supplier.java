@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Supplier {
 	@Id
-	private String id;
+	String id;
 
 	public String getId() {
 		return id;
