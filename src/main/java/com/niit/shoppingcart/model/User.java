@@ -2,10 +2,10 @@ package com.niit.shoppingcart.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
@@ -16,11 +16,10 @@ import org.springframework.stereotype.Component;
 public class User {
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	@NotEmpty(message = "Please enter your name")
 	private String name;
-	@Min(6)
-	@Max(25)
 	private String password;
 	private String mobile;
 
@@ -37,11 +36,11 @@ public class User {
 
 	private String role;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

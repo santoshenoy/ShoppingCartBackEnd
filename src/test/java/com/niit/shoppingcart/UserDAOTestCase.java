@@ -57,7 +57,7 @@ public class UserDAOTestCase {
 
 	// @Test
 	public void saveTestCase() {
-		user.setId("Skmjekd");
+		// user.setId("Skmjekd");
 		user.setName("mekfnefe");
 		user.setMobile("89847484");
 		user.setRole("ROLE_USER");
@@ -69,7 +69,7 @@ public class UserDAOTestCase {
 	// @Test
 	public void updateTestCase() {
 		user = new User();
-		user.setId("Santoshq1e");
+		// user.setId("Santoshq1e");
 		user.setRole("ROLE_USER");
 	}
 
