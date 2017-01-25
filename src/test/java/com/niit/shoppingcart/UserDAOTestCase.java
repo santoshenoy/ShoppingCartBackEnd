@@ -63,7 +63,7 @@ public class UserDAOTestCase {
 		user.setRole("ROLE_USER");
 		user.setPassword("fkfjejejed");
 
-		Assert.assertEquals("saveTestCase", true, userDAO.save(user));
+		Assert.assertEquals("saveTestCase", true, userDAO.saveOrUpdate(user));
 	}
 
 	// @Test

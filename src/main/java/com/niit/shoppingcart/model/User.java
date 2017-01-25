@@ -1,30 +1,30 @@
 package com.niit.shoppingcart.model;
 
-import javax.persistence.Column;
+import java.io.Serializable;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name = "USER")
 @Component
-public class User {
+public class User implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	@NotEmpty(message = "Please enter your name")
+	// @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String id;
 	private String name;
 	private String password;
 	private String mobile;
-
-	@Column(unique = true, nullable = false)
 	private String mail;
+	private String role;
+
+	public User() {
+		role = "ROLE_USER";
+	}
 
 	public String getMail() {
 		return mail;
@@ -34,13 +34,11 @@ public class User {
 		this.mail = mail;
 	}
 
-	private String role;
-
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

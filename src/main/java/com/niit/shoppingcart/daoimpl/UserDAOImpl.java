@@ -50,9 +50,9 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Transactional
-	public boolean save(User user) {
+	public boolean saveOrUpdate(User user) {
 		try {
-			sessionFactory.getCurrentSession().save(user);
+			sessionFactory.getCurrentSession().saveOrUpdate(user);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -60,15 +60,10 @@ public class UserDAOImpl implements UserDAO {
 		return true;
 	}
 
-	@Transactional
-	public boolean update(User user) {
-		try {
-			sessionFactory.getCurrentSession().update(user);
-		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-	}
+	/*
+	 * @Transactional public boolean update(User user) { try {
+	 * sessionFactory.getCurrentSession().update(user); } catch (Exception e) {
+	 * e.printStackTrace(); return false; } return true; }
+	 */
 
 }
