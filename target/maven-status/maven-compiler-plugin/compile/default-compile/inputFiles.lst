@@ -1,5 +1,6 @@
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\dao\PaymentDAO.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\model\Cart.java
+C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\daoimpl\ShippingDAOImpl.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\daoimpl\SupplierDAOImpl.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\dao\CartDAO.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\dao\ProductDAO.java
@@ -9,6 +10,7 @@ C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\sho
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\daoimpl\ProductDAOImpl.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\daoimpl\UserDAOImpl.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\config\ApplicationContextConfig.java
+C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\model\Shipping.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\model\Category.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\model\Supplier.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\model\User.java
@@ -18,3 +20,4 @@ C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\sho
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\dao\SupplierDAO.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\daoimpl\CartDAOImpl.java
 C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\model\Payment.java
+C:\Users\Santosh Shenoy\workspace\ShoppingCartBackEnd\src\main\java\com\niit\shoppingcart\dao\ShippingDAO.java

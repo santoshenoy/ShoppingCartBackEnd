@@ -25,86 +25,32 @@ public class Payment {
 		this.id = id;
 	}
 
-	public String getFname() {
-		return fname;
+	public String getCard_no() {
+		return card_no;
 	}
 
-	public void setFname(String fname) {
-		this.fname = fname;
+	public void setCard_no(String card_no) {
+		this.card_no = card_no;
 	}
 
-	public String getLname() {
-		return lname;
+	public String getCard_cvv() {
+		return card_cvv;
 	}
 
-	public void setLname(String lname) {
-		this.lname = lname;
+	public void setCard_cvv(String card_cvv) {
+		this.card_cvv = card_cvv;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getCard_exp() {
+		return card_exp;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setCard_exp(String card_exp) {
+		this.card_exp = card_exp;
 	}
 
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getCountry() {
-		return country;
-	}
-
-	public void setCountry(String country) {
-		this.country = country;
-	}
-
-	public String getZipcode() {
-		return zipcode;
-	}
-
-	public void setZipcode(String zipcode) {
-		this.zipcode = zipcode;
-	}
-
-	public String getMobile() {
-		return mobile;
-	}
-
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
-
-	public String getMail() {
-		return mail;
-	}
-
-	public void setMail(String mail) {
-		this.mail = mail;
-	}
-
-	private String fname;
-	private String lname;
-	private String address;
-	private String city;
-	private String state;
-	private String country;
-	private String zipcode;
-	private String mobile;
-	private String mail;
+	private String card_no;
+	private String card_cvv;
+	private String card_exp;
 
 }
