@@ -14,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.shoppingcart.dao.UserDAO;
 import com.niit.shoppingcart.model.User;
 
-@SuppressWarnings("deprecation")
 @Repository("userDAO")
 @EnableTransactionManagement
 public class UserDAOImpl implements UserDAO {
@@ -59,11 +58,5 @@ public class UserDAOImpl implements UserDAO {
 		}
 		return true;
 	}
-
-	/*
-	 * @Transactional public boolean update(User user) { try {
-	 * sessionFactory.getCurrentSession().update(user); } catch (Exception e) {
-	 * e.printStackTrace(); return false; } return true; }
-	 */
 
 }

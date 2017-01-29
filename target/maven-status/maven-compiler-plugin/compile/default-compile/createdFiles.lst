@@ -6,10 +6,13 @@ com\niit\shoppingcart\model\Category.class
 com\niit\shoppingcart\config\ApplicationContextConfig.class
 com\niit\shoppingcart\dao\ProductDAO.class
 com\niit\shoppingcart\daoimpl\CategoryDAOImpl.class
+com\niit\shoppingcart\dao\PaymentDAO.class
 com\niit\shoppingcart\daoimpl\SupplierDAOImpl.class
 com\niit\shoppingcart\dao\CategoryDAO.class
 com\niit\shoppingcart\model\Cart.class
+com\niit\shoppingcart\model\Payment.class
 com\niit\shoppingcart\model\Product.class
+com\niit\shoppingcart\daoimpl\PaymentDAOImpl.class
 com\niit\shoppingcart\util\Util.class
 com\niit\shoppingcart\dao\SupplierDAO.class
 com\niit\shoppingcart\model\Supplier.class
