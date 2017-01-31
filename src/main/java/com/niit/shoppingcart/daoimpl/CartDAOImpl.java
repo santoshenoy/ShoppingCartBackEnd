@@ -80,4 +80,14 @@ public class CartDAOImpl implements CartDAO {
 		log.debug("End of the userCartList method");
 		return null;
 	}
+
+	@Transactional
+	public void deleteCartByUser(String uid) {
+		log.debug("Start of the deleteCartByUser method");
+		Cart cart = new Cart();
+		cart.setU_id(uid);
+		sessionfactory.getCurrentSession().delete(cart);
+		log.debug("End of the deleteCartByUser method");
+	}
+
 }

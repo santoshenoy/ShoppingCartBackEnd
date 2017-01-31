@@ -14,4 +14,6 @@ public interface UserDAO {
 
 	public boolean saveOrUpdate(User user);
 
+	public User getUser(String mail);
+
 }

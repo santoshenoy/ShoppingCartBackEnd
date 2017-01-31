@@ -65,4 +65,17 @@ public class UserDAOImpl implements UserDAO {
 		return true;
 	}
 
+	@Transactional
+	public User getUser(String mail) {
+
+		String hql_string = "FROM User WHERE mail = '" + mail + "'";
+		@SuppressWarnings("rawtypes")
+		Query query = sessionFactory.getCurrentSession().createQuery(hql_string);
+		List<User> list = query.list();
+		return list.get(0);
+
+		// return (User) sessionFactory.getCurrentSession().get(User.class,
+		// mail);
+	}
+
 }
